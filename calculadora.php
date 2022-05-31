@@ -12,6 +12,9 @@ function calcularDanio($vida, $ataque, $pocion){
     else if($ataque = "patada" && pocion == 1){
         $danio = $danios[$ataque] * 3;
     }
+    else{
+        $danio = $danios[$ataque];
+    }
     return $danio;
 }
 
